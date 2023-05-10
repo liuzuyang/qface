@@ -1,0 +1,12 @@
+module org.example 1.0
+
+interface Echo {
+    string message;
+    void echo(string message);
+    signal broadcast(string message);
+    Status status;
+}
+
+enum Status {
+    Null, Loading, Ready, Error
+}
